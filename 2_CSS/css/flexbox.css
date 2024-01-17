@@ -1,0 +1,394 @@
+div{
+    border : 1px solid black;
+    box-sizing: border-box; 
+    /* content + padding + border 합으로 width/height 지정 */
+}
+
+.item{
+    width: 75px;
+    height: 75px;
+}
+
+.item1{background-color: red;}
+.item2{background-color: orangered;}
+.item3{background-color: orange;}
+.item4{background-color: yellow;}
+.item5{background-color: yellowgreen;}
+.item6{background-color: green;}
+.item7{background-color: lightblue;}
+.item8{background-color: blue;}
+.item9{background-color: violet;}
+
+.flex-container {
+    height: 700px;
+
+    display: flex;
+    /*
+    item(내부요소)을 감싸는 요소의 형식을 flex로 변경
+    -> item에 자동으로 지정된 margin 요소가 모두 사라지고
+    content 영역만큼의 크기만 가지게 됨
+    */
+
+    /* flex-direction (부모 전용 속성) */
+    /* 메인축의 방향과 시작 위치를 지정하는 속성 */
+
+    /* 행 방향 (가로, 기본값) */
+    /* flex-direction: row; */
+
+    /* 행 방향 (가로) + 순서 반대 */
+    /* flex-direction: row-reverse; */
+
+    /* 열 방향 (세로) */
+    /* flex-direction: column; */
+
+    /* 열 방향 (세로) + 순서 반대 */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap (부모 전용 속성) */
+    /* 내부 item들을 포장하는 속성
+        item들이 강제로 한 줄에 배치되게 할지
+        한 줄을 벗어나 여러 줄로 배치할 것인지 지정
+    */
+    
+    /* item을 한 줄로 배치 (기본값) */
+    /* flex-wrap: nowrap; */
+
+    /* item을 여러 줄로 배치 */
+    /* flex-wrap: wrap; */
+
+    /* item을 여러 줄로 배치 (뒤에서 배치) */
+    /* flex-wrap: wrap-reverse; */
+
+    /* flex-direction: column; */
+
+
+    /* justify-content */
+    /* 메인축 방향으로 item의 정렬 방법을 조정함*/
+
+    /* 메인축 방향으로 앞에서부터 정렬 (기본값) */
+    /* justify-content: flex-start; */
+
+    /* 메인축 방향으로 뒤에 붙어서 정렬 */
+    /* justify-content: flex-end; */
+
+    /* 메인축 방향으로 가운데 정렬 */
+    /* justify-content: center; */
+
+    /* item 주위에 메인축 방향 양쪽으로 일정한 크기의 공간을 추가
+        -> 양끝은 조금, item 중간은 넓게 떨어져있음 
+        -> 브라우저 크기에 따라 변함
+    */
+    /* justify-content: space-around; */
+
+    /* 양 끝의 여백과 item들 사이의 여백이 같음 */
+    /* justify-content: space-evenly; */
+
+    /* 양끝쪽을 붙인 상태에서 item들의 간격을 일정하게 정렬시킨다. */
+    /* justify-content: space-between; */
+
+
+
+    /* align-items */
+    /* item들을 교차축 방향으로 정렬하는 방법을 지정하는 속성 */
+
+    /* align-items: center; */
+}
+
+#con {
+    width: 450px;
+    height: 450px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}
+
+/* item(자식)에게 주는 flex 속성 */
+.basis-20 { 
+    flex-basis: 20%;
+}
+
+.basis-30 {
+    flex-basis: 30%; 
+}
+
+.basis-50 { 
+    flex-basis: 50%; 
+}
+
+/* order: 숫자; 
+order: 0; (기본값)
+*/
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 500px;
+}
+
+.header-1, .footer-1 {
+    flex-basis: 20%;
+    background-color: gray;
+}
+
+.body-1 {
+    flex-basis: 60%;
+
+    display: flex;
+}
+
+.body-1-1 {
+    flex-basis: 30%;
+    background-color: skyblue;
+}
+
+.body-1-2 {
+    flex-basis: 50%;
+    background-color: brown;
+}
+
+.body-1-3 {
+    flex-basis: 20%;
+    background-color: beige;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 500px;
+}
+
+.header-2 {
+    flex-basis: 20%;
+    background-color: red;
+}
+
+.body-2 {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.body-2-1 {
+    flex-basis: 25%;
+    background-color: yellow;
+}
+
+.body-2-2 {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-2-2-1 {
+    flex-basis: 80%;
+    background-color: greenyellow;
+}
+
+.body-2-2-2 {
+    flex-basis: 20%;
+    background-color: blue;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 500px;
+}
+
+.header-3 {
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.body-3 {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.body-3-1 {
+    flex-basis: 30%;
+    background-color: skyblue;
+}
+
+.body-3-2 {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-3-2-1 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.body-3-2-1-1 {
+    flex-basis: 70%;
+    background-color: aquamarine;
+}
+
+.body-3-2-1-2 {
+    flex-basis: 30%;
+    background-color: orangered;
+}
+
+.body-3-2-2 {
+    flex-basis: 50%;
+    background-color: fuchsia;
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 500px;
+}
+
+.header-4 {
+    flex-basis: 20%;
+    background-color: aquamarine;
+}
+
+.body-4 {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.body-4-1 {
+    flex-basis: 30%;
+    background-color: aqua;
+}
+
+.body-4-2 {
+    flex-basis: 70%;
+    background-color: orange;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+}
+
+.item-4 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.footer-4 {
+    flex-basis: 20%;
+    background-color: aquamarine;
+}
+
+.container-5 {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 500px;
+}
+
+.header-5 {
+    flex-basis: 30%;
+    display: flex;
+    background-color: yellow;
+}
+
+.header-5-1 {
+    flex-basis: 20%;
+}
+
+.header-5-2 {
+    flex-basis: 40%;
+}
+
+.header-5-3 {
+    flex-basis: 40%;
+}
+
+.body-5 {
+    flex-basis: 70%;
+    display: flex;
+}
+
+.body-5-1 {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-5-1-1 {
+    flex-basis: calc(100%/3);
+    background-color: skyblue;
+}
+
+.body-5-2 {
+    flex-basis: 15%;
+    background-color: pink;
+}
+
+.body-5-3 {
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.body-5-3-1 {
+    flex-basis: 50%;
+    background-color: orange;
+}
+
+.body-5-3-2 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.body-5-3-2-1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-5-3-2-1-1 {
+    flex-basis: 50%;
+    background-color: green;
+}
+
+.body-5-3-2-2 {
+    flex-basis: 50%;
+    background-color: red;
+}
+
+.body-5-4 {
+    flex-basis: 15%;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-5-4-1 {
+    flex-basis: 20%;
+    background-color: pink;
+}
+
+.body-5-4-2 {
+    flex-basis: 60%;
+    background-color: pink;
+}
+
+.body-5-4-3 {
+    flex-basis: 20%;
+    background-color: pink;
+}
