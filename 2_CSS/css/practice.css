@@ -1,0 +1,25 @@
+.tb1 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+#tr3 > td:first-child {
+    background-color: red;
+}
+
+#tr4 > td:first-child {
+    background-color: red;
+}
+
+#tr4 > td:nth-child(2), #tr4 > td:nth-child(3){
+    background-color: green;
+}
+
+#tr5 > td:first-child, #tr5 > td:nth-child(2) {
+    background-color: red;
+}
+
+#tr5 > td:nth-child(3), #tr5 > td:nth-child(4) {
+    background-color: green;
+}
