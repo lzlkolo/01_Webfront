@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 1140px;
+    margin: auto;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 20px;
+
+    position: sticky;
+    top:0;
+    background-color: white;
+}
+
+/* 아이콘 1개 */
+header > section:nth-of-type(1),
+header > section:nth-of-type(5) {
+    flex-basis: 5%;
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 */
+header > section:nth-of-type(2) {
+    flex-basis: 10%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 공백 2개 */
+header > section:nth-of-type(3),
+header > section:nth-of-type(6) {
+    flex-basis: 7%;
+}
+
+/* 검색창 */
+header > section:nth-of-type(4) {
+    flex-basis: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 아이콘 3개짜리 */
+header > section:nth-of-type(7) {
+    flex-basis: 16%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home-logo {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* 목록 아이콘 */
+#list-btn {
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#list-btn:hover {
+    background-color: #ddd;    
+}
+
+/* 검색창 */
+.search-area {
+    width: 600px;
+}
+
+.search-area fieldset {
+    border: 1px solid gray;
+    border-radius: 30px;
+    margin: 0;
+    padding: 3px;
+    
+    display: flex;
+}
+
+#search-box {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-right: 1px solid #ddd;
+    outline: none;
+    background-color: transparent;
+    
+    flex-basis: 90%;
+}
+
+#search-btn {
+    flex-basis: 10%;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+#search-btn:hover {
+    background-color: #ddd;
+}
+
+#mic-btn {
+    margin-left: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#mic-btn:hover {
+    background-color: #ddd;
+}
+
+header > section:nth-of-type(7) > button {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50px;
+    
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+header > section:nth-of-type(7) > button:hover {
+    background-color: #ddd;
+}
+
+/* content */
+.content {
+    display: flex;
+
+    /* 나중에 지우기!! */
+    height: 800px;
+}
+
+.container-1 {
+    flex-basis: 65%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-2 {
+    flex-basis: 35%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container {
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-player {
+    border: none;
+    border-radius: 10px;
+}
+
+.video-title {
+    height: 70px;
+    line-height: 30px;
+    padding: 0 20px;
+
+    font-size: 20px;
+    
+    font-weight: bold;
+}
+
+.menu-container {
+    height: 55px;
+
+    display: flex;
+}
+
+.video-owner {
+    flex-basis: 50%;
+
+    display: flex;
+}
+
+#video-owner-profile {
+    width: 40px;
+    border: none;
+    display: inline;
+}
+
+.actions {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.actions > button {
+    height: 40px;
+    margin-left: 10px;
+    padding: 0 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #eeeeee;
+}
+
+#mic-btn {
+    font-size: 16px;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.actions > button:hover {
+    border: none;
+    background-color: rgb(231, 231, 231);
+}
+
+.description {
+    height: 60px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.description > p {
+    font-size: 14px;
+}
+
+.comment-count > p {
+    border: none;
+}
+
+.comment {
+    height: 50px;
+}
+
+.comment > p {
+    border: none;
+    font-size: 14px;
+}
+
+.comment-view {
+    height: 50px;
+}
+
+.chat-view {
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.chat-view:hover {
+    background-color: #ddd;
+}

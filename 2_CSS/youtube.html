@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>youtube</title>
+        <link href="css/youtube.css" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/3e3d7844d6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <!-- 1 목록아이콘 -->
+                <!-- navi 만들어야할듯? -->
+                <section>
+                    <button id="list-btn" class="fa-solid fa-bars"></button>
+                </section>
+                
+
+                <!-- 2 로고 -->
+                <section>
+                    <a>
+                        <!-- youtube로고 이미지 필요 -->
+                        <img src="../images/youtube_logo.jpg" id="home-logo">
+                    </a>
+                </section>
+
+                <!-- 3 공백 -->
+                <section></section>
+
+                <!-- 4 검색창 -->
+                <section>
+                    <section class="search-area">
+                        <form action="#" name="search-form">
+                            <fieldset>
+                                <!-- input 98% -->
+                                <input type="search" id="search-box" name="query"
+                                autocomplete="off" placeholder="검색">
+
+                                <!-- button 2% -->
+                                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                            </fieldset>
+                        </form>
+                    </section>
+
+                </section>
+
+                <!-- 5 마이크 아이콘 -->
+                <section>
+                    <button id="mic-btn" class="fa-solid fa-microphone"></button>
+                </section>
+                
+
+                <!-- 6 공백 -->
+                <section></section>
+
+                <!-- 7 오른쪽 아이콘 3개 -->
+                <section>
+                    <button id="movin-btn" class="fa-solid fa-video"></button>
+                    <button id="bell-btn" class="fa-regular fa-bell"></button>
+                    <button id="profile-btn" class="fa-solid fa-circle-user"></button>
+                </section>
+            </header>
+
+            <!-- 화면 -->
+            <section class="content">
+                <!-- 화면 왼쪽 -->
+                <section class="container-1">
+                    <!-- 영상 들어갈 곳 -->
+                    <section class="video-container">
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OIq3DLUNDSg?si=34aqNBGt-3BVId_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        <iframe class="video-player" width="700" height="390" src="https://www.youtube.com/embed/OIq3DLUNDSg?si=34aqNBGt-3BVId_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+
+                    <!-- 영상 제목 -->
+                    <section class="video-title">[Playlist] 오늘은 무조건 내 기분이 좋아야겠어 🙂🙃🙂 | 시끄럽지 않아서 아무생각 없이 틀어놓으면 극락가는 국내 노래모음 플레이리스트</section>
+                    
+                    <!-- 메뉴들 -->
+                    <!-- 이름 변경 필요 -->
+                    <section class="menu-container">
+                        <!-- 채널명,구독 -->
+                        <section class="video-owner">
+                            <!-- 아이콘 -->
+                            <section>
+                                <a href="#">
+                                    <img id="video-owner-profile" src="../images/video-owner-profile.jpg">
+                                </a>
+                            </section>
+
+                            <!-- 이름 -->
+                            <section>
+                                <a class="inline" href="#">
+                                    핑프
+                                </a>
+                                <p>ㅇㅇ</p>
+                            </section>
+                            <!-- 구독 버튼 -->
+                            <section>
+                                <!-- <button class="fa-solid fa-user-plus"></button> -->
+                                <button class="yt-spec-touch-feedback-shape__fill"></button>
+                            </section>
+                        </section>
+
+
+                        <!-- 좋아요,공유 -->
+                        <section class="actions">
+                            <!-- 좋아요 -->
+                            <button class="fa-regular fa-thumbs-up"></button>
+                            <!-- 싫어요 -->
+                            <button class="fa-regular fa-face-sad-tear"></button>
+                            <!-- 공유 -->
+                            <button class="fa-solid fa-share"></button>
+                            <!-- 쩜쩜 -->
+                            <button class="fa-solid fa-ellipsis"></button>
+                        </section>
+                    </section>
+
+                    <!-- 본문 -->
+                    <section class="description">
+                        <p>조회수 14,142회  8시간 전 최초 공개</p>
+                    </section>
+
+                    <!-- 댓글 개수, 정렬 -->
+                    <section class="comment-count">
+                        <p>댓글 18개</p>
+                    </section>
+
+                    <!-- 댓글달기? -->
+                    <section class="comment">
+                        <p>다음 계정으로 댓글 쓰기</p>
+                    </section>
+
+                    <!-- 댓글보기 -->
+                    <section class="comment-view"></section>
+                </section>
+                
+
+
+
+                <!-- 화면 오른쪽 -->
+                <section class="container-2">
+                    <!-- 채팅 다시보기 -->
+                    <button class="chat-view">채팅 다시보기 표시</button>
+                </section>
+            </section>
+        
+
+        </main>
+    </body>
+</html>
