@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'SEBANG_Gothic_Bold';
+    box-sizing: border-box; 
+}
+
+body {
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    justify-content: flex-end;
+    text-decoration: none;   
+    transition-duration: 1s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgba(153, 153, 153, 0.5);
+
+    text-align: center;
+    line-height: 40px;
+
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #e9e9e9;
+    color: black;
+}
+
+.img{
+    position: relative;
+    background-image: url(../back-img.jpg); 
+    height: 100vh;
+    background-size: cover;
+}
+
+header {
+    padding-top: 100px;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+}
+
+header h1:first-child {
+    padding-top: 100px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 5px;
+    text-decoration-line: underline;
+}
+
+main section i {
+    font-size: 30px;
+}
+
+.about-me {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.about-me p {
+    font-size: 20px;
+}
+
+#about-me {
+    padding: 30px 0;
+}
+
+.about-me-1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.about-me-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-title p {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.about-me-2 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#archiving {
+    background-color: rgb(255, 251, 130);
+    padding: 30px 0;
+}
+
+.archiving {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.archiving i {
+    font-size: 40px;
+}
+
+.archiving p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.archiving a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin-left: 50px;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+}
+
+.archiving a:hover {
+    font-size: 40px;
+}
+
+.archiving-1 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.git {
+    text-align: center;
+}
+
+.archiving-2 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.velog {
+    text-align: center;
+}
+
+#contact {
+    background-color:  rgba(211, 211, 211, 0.897);
+    padding: 30px 0;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.contact i {
+    font-size: 30px;
+}
+
+.contact p {
+    margin-left: 20px;
+    font-size: 25px;
+    transition-duration: 0.5s;
+}
+
+.email {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

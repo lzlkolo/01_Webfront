@@ -4,12 +4,12 @@
 }
 
 body {
-    margin: 0;
     padding: 0;
+    margin: 0 20px;
 }
 
 main {
-    width: 1140px;
+    /* width: 1140px; */
     margin: auto;
 }
 
@@ -128,7 +128,6 @@ header > section:nth-of-type(7) {
     font-size: 15px;
     border: none;
     background-color: rgb(237, 237, 237);
-    padding: 8px;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -154,9 +153,6 @@ header > section:nth-of-type(7) > button:hover {
 /* content */
 .content {
     display: flex;
-
-    /* 나중에 지우기!! */
-    height: 800px;
 }
 
 .container-1 {
@@ -164,6 +160,7 @@ header > section:nth-of-type(7) > button:hover {
 
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
 }
 
@@ -175,8 +172,6 @@ header > section:nth-of-type(7) > button:hover {
 }
 
 .video-container {
-    height: 400px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,6 +179,8 @@ header > section:nth-of-type(7) > button:hover {
 
 .video-player {
     border: none;
+    width: 800px;
+    height: 450px;
     border-radius: 10px;
 }
 
@@ -199,20 +196,59 @@ header > section:nth-of-type(7) > button:hover {
 
 .menu-container {
     height: 55px;
+    width: 100%;
 
     display: flex;
 }
 
 .video-owner {
-    flex-basis: 50%;
-
+    width: 100%;
     display: flex;
+    align-items: center;
 }
 
 #video-owner-profile {
-    width: 40px;
     border: none;
-    display: inline;
+}
+
+.video-owner-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.video-owner-name > a {
+    flex-basis: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.video-owner-name > p {
+    flex-basis: 50%;
+    font-size: 12px;
+    /* margin-top: 2px; */
+    color: #464646;
+}
+
+.count {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.subscription {
+    font-size: 15px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 20px;
+    padding: 5px 13px;
+    
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.subscription:hover {
+    background-color: #222222;
 }
 
 .actions {
@@ -248,34 +284,107 @@ header > section:nth-of-type(7) > button:hover {
 }
 
 .description {
+    margin-top: 10px;
+    width: 100%;
     height: 60px;
     background-color: #f3f3f3;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.description:hover {
+    background-color: #e4e4e4;
 }
 
 .description > p {
     font-size: 14px;
+    margin: 2px;
+}
+
+.comment-count {
+    display: flex;
+    margin-top: 10px;
 }
 
 .comment-count > p {
+    width: 150px;
     border: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.comment-count > button {
+    background-color: transparent;
+    font-size: 14px;
+    padding: 0;
 }
 
 .comment {
-    height: 50px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    /* justify-content: flex-start; */
 }
 
-.comment > p {
+#user-profile {
+    flex-basis: 5%;
+    font-size: 18px;
+    padding-top: 12px;
+    
+    text-align: center;
+    border-radius: 50px;
     border: none;
+    color: white;
+    background-color: rgb(54, 96, 150);
+}
+
+
+
+.comment > p {
+    flex-basis: 95%;
+    margin-left: 10px;
+    /* border: none; */
+    border-bottom: 1px solid #ddd;
     font-size: 14px;
 }
+
 
 .comment-view {
     height: 50px;
 }
 
+.comment-view > section {
+    display: flex;
+}
+
+.comment-view > section > section {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.comment-profile {
+    flex-basis: 5%;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 3px 8px;
+    background-color: #ebeaea;
+    border: none;
+}
+
+
+.comment-view p {
+
+}
+
+.comment-time {
+    font-size: 12px;
+}
+
 .chat-view {
+    margin: 0 10px;
     height: 35px;
     border: 1px solid #ddd;
     border-radius: 20px;

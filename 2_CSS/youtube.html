@@ -70,7 +70,7 @@
                     <!-- 영상 들어갈 곳 -->
                     <section class="video-container">
                         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OIq3DLUNDSg?si=34aqNBGt-3BVId_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                        <iframe class="video-player" width="700" height="390" src="https://www.youtube.com/embed/OIq3DLUNDSg?si=34aqNBGt-3BVId_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="video-player" src="https://www.youtube.com/embed/OIq3DLUNDSg?si=34aqNBGt-3BVId_B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </section>
 
                     <!-- 영상 제목 -->
@@ -89,16 +89,14 @@
                             </section>
 
                             <!-- 이름 -->
-                            <section>
-                                <a class="inline" href="#">
-                                    핑프
-                                </a>
-                                <p>ㅇㅇ</p>
+                            <section class="video-owner-name">
+                                <a href="#">핑프</a>
+                                <p>구독자 12.4만명</p>
                             </section>
+
                             <!-- 구독 버튼 -->
                             <section>
-                                <!-- <button class="fa-solid fa-user-plus"></button> -->
-                                <button class="yt-spec-touch-feedback-shape__fill"></button>
+                                <button class="subscription">구독</button>
                             </section>
                         </section>
 
@@ -118,21 +116,40 @@
 
                     <!-- 본문 -->
                     <section class="description">
-                        <p>조회수 14,142회  8시간 전 최초 공개</p>
+                        <!-- 펼치기 전 -->
+                        <p>조회수 5.7만회 1일 전</p>
+                        <p>...더보기</p>
                     </section>
 
                     <!-- 댓글 개수, 정렬 -->
                     <section class="comment-count">
                         <p>댓글 18개</p>
+                        <button class="fa-solid fa-arrow-down-wide-short"> 정렬 기준</button>
                     </section>
 
                     <!-- 댓글달기? -->
                     <section class="comment">
-                        <p>다음 계정으로 댓글 쓰기</p>
+                        <!-- 프로필이미지 -->
+                        <i id="user-profile" class="fa-solid fa-user"></i>
+                        <p>댓글 추가...</p>
                     </section>
 
-                    <!-- 댓글보기 -->
-                    <section class="comment-view"></section>
+                    <!-- 댓글창 -->
+                    <section class="comment-view">
+                        <!-- 댓글 -->
+                        <section>
+                            <button class="fa-regular fa-user comment-profile"></button>
+                            
+                            <section>
+                                <section>
+                                    <p>@favoritepopsong999</p>
+                                    <p class="comment-time">19시간 전</p>
+                                </section>
+                                
+                                <p>첫 번째 게시물부터 이 목록이 마음에 들었습니다.</p>
+                            </section>
+                        </section>
+                    </section>
                 </section>
                 
 

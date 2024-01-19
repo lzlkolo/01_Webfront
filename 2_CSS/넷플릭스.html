@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+    <link href="css/netflix.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e3d7844d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 전체 웹사이트 -->
+    <div class="container">
+        <!-- 상단바 -->
+        <nav>
+            <!-- 로고 영역 -->
+            <a href="#">
+                <img src="/images/netflix-logo.png" id="logo">
+            </a>
+
+            <!-- 메뉴바 -->
+            <ul>
+                <li>TV프로그램</li>
+                <li>영화</li>
+                <li>최신 등록 콘텐츠</li>
+                <li>내가 찜한 콘텐츠</li>
+            </ul>
+
+            <!-- 아이콘 3개 -->
+            <div class="icon-box">
+                <!-- 각각의 아이콘이 들어갈 수 있는 부모 영역 -->
+                <div>
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 배너 부분 -->
+        <!-- <img>태그에서 배경 위에 글자를 쓰려면 css사용해서 할 수 있지만
+            class로 배경을 넣어주면 바로 위에 쓸 수 있음! -->
+        <section class="banner">
+            <div class="title-box">
+                <h1>어바웃타임</h1>
+                <p>모태솔로 팀(돔놀 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄만한 가문의 비밀을 듣게 된다. <br>
+                    바로 시간을 되돌릴 수 있는 능력이 있다는 것! <br>
+                    꿈을 위해 런던으로 간 팀은 우연히 만난 사랑스러운 여인 메리에게 첫눈에 반하게 된다. <br>
+                    그녀의 사랑을 얻기 위해 자신의 특별한 능력을 마음껏 발휘하는 팀. <br>
+                    꿈에 그리던 그녀와 매일매일 최고의 순간을 보낸다. <br>
+                    하지만 그와 그녀의 사랑이 완벽해질수록 팀을 둘러싼 주변 상황들은 미묘하게 엇갈리고, <br>
+                    예상치 못한 사건들이 여기저기 나타나기 시작하는데… <br>
+                    어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?
+                </p>
+
+                <div class="title-box-btn">
+                    <button>재생</button>
+                    <button>내가 찜한 콘텐츠</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- 콘텐츠 부분 -->
+        <main>
+            <!-- 콘텐츠 영역1-->
+            <section class="contents-box">
+                <h2>오늘 한국의 TOP 10 콘텐츠</h2>
+                <!-- 포스터 -->
+                <section>
+                    <div class="poster-box">
+                        <!-- 숫자! -->
+                        <p>1</p>
+                        <div>
+                            <img src="/images/top1.webp">
+                        </div>
+                    </div>
+                    <div class="poster-box">
+                        <p>2</p>
+                        <div>
+                            <img src="/images/top2.webp">
+                        </div>
+                    </div>
+                    <div class="poster-box">
+                        <p>3</p>
+                        <div>
+                            <img src="/images/top3.webp">
+                        </div>
+                    </div>
+                    <div class="poster-box">
+                        <p>4</p>
+                        <div>
+                            <img src="/images/top2.webp">
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- 콘텐츠 영역2 -->
+            <section class="contents-box">
+                <h2>지금 뜨는 콘텐츠</h2>
+                <section class="poster-box-2">
+                    <div>
+                        <img src="/images/poster1.webp">
+                    </div>
+                    <div>
+                        <img src="/images/poster2.webp">
+                    </div>
+                    <div>
+                        <img src="/images/poster2.webp">
+                    </div>
+                    <div>
+                        <img src="/images/poster2.webp">
+                    </div>
+                    <div>
+                        <img src="/images/poster2.webp">
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

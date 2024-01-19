@@ -1,0 +1,141 @@
+* {
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* border: 1px solid white; */
+}
+
+.container {
+    background-color: black;
+    /* body태그의 100% */
+    height: 100%;
+}
+
+#logo {
+    width: 50px;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid red;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    flex-basis: 75%;
+}
+
+nav > ul > li {
+    text-align: center;
+    line-height: 60px;
+    margin: 0 10px;
+}
+
+.icon-box {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > a:first-child {
+    flex-basis: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-image: url(/images/neflix-banner.jpg);
+    width: 100vw;
+    height: 800px;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-box {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+    margin-bottom: 150px;
+}
+
+.title-box > h1 {
+    font-size: 50px;
+}
+
+.title-box > p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.title-box-btn {
+    margin-top: 30px;
+}
+
+.title-box-btn > button {
+    color: black;
+    padding: 10px 50px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title-box-btn > button:last-child {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.contents-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contents-box img {
+    width: 200px;
+}
+
+/* 숫자 */
+.contents-box p {
+    font-size: 150px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 5px white;
+
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+
+.contents-box > section {
+    display: flex;
+}
+
+.contents-box > h2 {
+    padding: 20px 50px;
+}
+
+.poster-box {
+    position: relative;
+    margin: 0 50px;
+}
+
+.poster-box-2 {
+    padding: 0 50px;
+}
+
+.poster-box-2 div {
+    margin-right: 50px;
+}
