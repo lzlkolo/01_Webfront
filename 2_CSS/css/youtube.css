@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 body {
@@ -9,7 +8,6 @@ body {
 }
 
 main {
-    /* width: 1140px; */
     margin: auto;
 }
 
@@ -218,15 +216,14 @@ header > section:nth-of-type(7) > button:hover {
 }
 
 .video-owner-name > a {
-    flex-basis: 50%;
     text-decoration: none;
     color: black;
 }
 
 .video-owner-name > p {
-    flex-basis: 50%;
     font-size: 12px;
-    /* margin-top: 2px; */
+    margin: 0;
+    padding: 0;
     color: #464646;
 }
 
@@ -309,23 +306,30 @@ header > section:nth-of-type(7) > button:hover {
 }
 
 .comment-count > p {
-    width: 150px;
+    width: 130px;
     border: none;
     font-size: 19px;
     font-weight: bold;
 }
 
-.comment-count > button {
+.sort-btn {
+    display: flex;
+    align-items: center;
+}
+
+.sort-btn > button {
     background-color: transparent;
     font-size: 14px;
-    padding: 0;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
 }
 
 .comment {
     height: 40px;
     width: 100%;
     display: flex;
-    /* justify-content: flex-start; */
+    margin-bottom: 20px;
 }
 
 #user-profile {
@@ -340,16 +344,13 @@ header > section:nth-of-type(7) > button:hover {
     background-color: rgb(54, 96, 150);
 }
 
-
-
 .comment > p {
+    margin: 0 0 15px 10px;
     flex-basis: 95%;
-    margin-left: 10px;
-    /* border: none; */
+    border: none;
     border-bottom: 1px solid #ddd;
     font-size: 14px;
 }
-
 
 .comment-view {
     height: 50px;
@@ -359,28 +360,71 @@ header > section:nth-of-type(7) > button:hover {
     display: flex;
 }
 
-.comment-view > section > section {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+.comment-view p {
+    margin: 0;
 }
 
 .comment-profile {
     flex-basis: 5%;
     font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
     border-radius: 50px;
-    padding: 3px 8px;
     background-color: #ebeaea;
     border: none;
+    cursor: pointer;
 }
 
+.comment-container {
+    flex-basis: 95%;
+    display: flex;
+    flex-direction: column;
+}
 
-.comment-view p {
+.comment-container > section {
+    display: flex;
+}
 
+.comment-container > section > * {
+    cursor: pointer;
+}
+
+.comment-user {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .comment-time {
+    padding-left: 10px;
     font-size: 12px;
+}
+
+.comment-description {
+    font-size: 14px;
+}
+
+.comment-btn {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.comment-btn > * {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.comment-btn > button {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.comment-btn > *:hover {
+    background-color: #ddd;
 }
 
 .chat-view {
