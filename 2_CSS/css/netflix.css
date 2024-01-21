@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 
-    /* border: 1px solid white; */
+    border: 1px solid red;
 }
 
 .container {
@@ -20,7 +20,6 @@
 nav {
     height: 60px;
     display: flex;
-    border-bottom: 1px solid red;
 }
 
 nav > ul {
@@ -52,7 +51,6 @@ nav > a:first-child {
 
 .banner {
     background-image: url(/images/neflix-banner.jpg);
-    width: 100vw;
     height: 800px;
     background-repeat: no-repeat;
 
