@@ -85,7 +85,6 @@ function totalFn() {
     const value3 = Number(num3.value);
 
     total.innerText = value1 + value2 + value3;
-
 }
 
 // 증가/감소 연산자 (++, --)
@@ -153,4 +152,18 @@ function check() {
     // a == 11
     // b == 4
     // c == 55
+}
+
+function printJSObject() {
+    const name = document.getElementById("userName");
+    const age = document.getElementById("userAge");
+    const gender = document.getElementById("userGender");
+
+    const user = { 
+        이름 : name.value,
+        나이 : age.value, 
+        성별 : gender.value 
+    };
+
+    console.log(user);
 }
