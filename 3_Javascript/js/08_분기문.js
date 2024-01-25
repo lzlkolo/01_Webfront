@@ -94,6 +94,8 @@ function startGame() {
     // 취소 누르기 전까지 반복
     while (input !== null) {
         input = prompt("1~100사이 숫자를 입력해주세요.");
+
+        count++;
         
         if (input > randomNumber) {
             alert(`[DOWN] count : ${count}`);
@@ -103,8 +105,6 @@ function startGame() {
             alert("성공!");
             break;
         }
-
-        count++;
 
         if (count > 4) {
             alert("실패");
