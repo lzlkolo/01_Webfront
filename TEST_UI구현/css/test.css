@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th, td {
+    height: 50px;
+}
+
+.applyBtn {
+    margin-top: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.result > div {
+    display: flex;
+    border: 3px solid black;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+
+    <style>
+        fieldset {
+            width: 500px;
+        }
+        tr {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>회원 가입 양식</legend>
+        
+        <table>
+            <tr>
+                <th>아이디</th>
+                <td><input id="id"></td>
+                <td><button>중복확인</button></td>
+            </tr>
+
+            <tr>
+                <th>비밀번호</th>
+                <td><input type="password" id="password"></td>
+                <td><span id="passwordResult"></span></td>
+            </tr>
+
+            <tr>
+                <th>비밀번호 확인</th>
+                <td><input type="password" id="password-check"></td>
+            </tr>
+
+            <tr>
+                <th>이름</th>
+                <td><input id="name"></td>
+                <td><span id="nameResult"></span></td>
+            </tr>
+
+            <tr>
+                <th>성별</th>
+                <td id="geneder">
+                    남<input type="radio" name="gender">
+                    여<input type="radio" name="gender">
+                </td>
+            </tr>
+
+            <tr>
+                <th>전화번호</th>
+                <td><input id="phone"></td>
+            </tr>
+
+            <tr>
+                <th>이메일</th>
+                <td><input></td>
+            </tr>
+        </table>
+
+        <div>
+            <button>초기화</button>
+            <button id="signup">회원가입</button>
+        </div>
+
+    </fieldset>
+    <script src="../js/회원가입양식.js"></script>
+</body>
+</html>
