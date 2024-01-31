@@ -8,19 +8,15 @@ const numList = document.querySelectorAll(".number");
 let count = 0;
 
 document.querySelector(".container").addEventListener("click", function(e) {
+    count++;
     for (let i = 0; i < numList.length; i++) {
-        console.log(numList[i]);
-        console.log(count);
-        console.log(e.target.innerText);
-
-        if (count < 11 && numList[i] == Number(e.target.innerText)) {
-            count++;
+        if (count < 11 && numList[i].innerText == Number(e.target.innerText)) {
             result.innerText +=e.target.innerText;
         } else if (count > 10) {
             alert("10개까지 입력");
+            break;
         }
     } 
-
 });
 
 document.querySelector("#reset").addEventListener("click", () => {
